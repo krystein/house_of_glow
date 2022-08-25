@@ -1,0 +1,119 @@
+body {
+  min-height: 100%;
+  background: linear-gradient(
+      rgba(212, 37, 212, 0.5),
+      rgba(219, 128, 219, 0.5),
+      rgba(138, 61, 138, 0.5)
+    ),
+    url(./img/HOG.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+h2,
+p {
+  font-family: "PT Serif", serif;
+}
+#Home {
+  height: 100vh;
+  min-height: 100%;
+  background: linear-gradient(
+      rgba(212, 37, 212, 0.5),
+      rgba(219, 128, 219, 0.5),
+      rgba(138, 61, 138, 0.5)
+    ),
+    url(./img/logo.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "DynaPuff", cursive;
+  color: #fff;
+}
+.heading {
+  font-weight: 500;
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  text-align: center;
+}
+.title {
+  font-weight: 400;
+  font-size: 20px;
+}
+#about {
+  background: linear-gradient(
+      rgba(212, 37, 212, 0.9),
+      rgba(219, 128, 219, 0.9),
+      rgba(138, 61, 138, 0.9)
+    ),
+    url(./img/logo1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  color: #fff;
+  align-items: center;
+  font-weight: 500;
+  font-size: 25px;
+}
+@media screen and (max-width: 1200px) {
+  .about {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+#gallery {
+  background-color: rgba(219, 128, 219, 0.5);
+  color: #fff;
+  font-family: "DynaPuff", cursive;
+}
+.col {
+  display: grid;
+  justify-content: center;
+}
+.img:hover {
+  border-radius: 0px 20px;
+  box-shadow: 0rem 0rem 3.38rem rgba(94, 4, 94, 0.5);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+@media screen and (max-width: 1200px) {
+  .img:hover {
+    border-radius: 0px 20px;
+    box-shadow: none;
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+}
+.text {
+  text-align: center;
+}
+#contact {
+  background: linear-gradient(
+      rgba(212, 37, 212, 0.9),
+      rgba(219, 128, 219, 0.9),
+      rgba(138, 61, 138, 0.9)
+    ),
+    url(./img/logo1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  font-family: "DynaPuff", cursive;
+}
+.footer {
+  background-color: rgba(94, 4, 94, 0.5);
+}
+.social {
+  color: white;
+  letter-spacing: 10px;
+  font-size: 22px;
+}
+.fa:hover {
+  border-radius: 0px 20px;
+  box-shadow: 0rem 0rem 3.38rem rgba(94, 4, 94, 0.5);
+  cursor: pointer;
+  transform: scale(1.05);
+}
