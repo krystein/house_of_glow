@@ -1,151 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="stylesheet" href="./fashion.css" />
-    <link rel="stylesheet" href="./css/bootstrap-grid.css" />
-    <link rel="stylesheet" href="./css/bootstrap.css" />
-    <link rel="stylesheet" href="./css/bootstrap-reboot.css" />
-    <link rel="stylesheet" href="./css/bootstrap-utilities.css" />
-    <title>fashion</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
-  <body>
-    <section class="container p-3" id="Home">
-      <div class="d-flex flex-row p-5 justify-content-center">
-        <div class="pt-5 mt-5">
-          <h1 class="heading">House<br/> of <br/><span style="color: #eb268f;">Glow</span></h1>
-          <p class="title">
-            Style is a way to say who you are without having to speak. —Rachel
-            Zoe
-          </p>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="./fashion.css" />
+  <link rel="stylesheet" href="./css/bootstrap-grid.css" />
+  <link rel="stylesheet" href="./css/bootstrap.css" />
+  <link rel="stylesheet" href="./css/bootstrap-reboot.css" />
+  <link rel="stylesheet" href="./css/bootstrap-utilities.css" />
+  <title>fashion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <!--header-->
+  <section>
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-1 py-lg-0 px-lg-5">
+      <a href="index.html" class="navbar-brand d-block d-lg-none">
+        <h1 class="display text-white m-0">House Of Glow</h1>
+      </a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"
+        onclick="openNav()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav ml-auto py-0">
+          <a href="#Home" class="nav-item nav-link active">Home</a>
+          <a href="#about" class="nav-item nav-link">About</a>
+          <a href="#service" class="nav-item nav-link">Service</a>
+          <a href="#project" class="nav-item nav-link">Project</a>
         </div>
-        <div>
-      </div>
-    </section>
-    <section class="container mt-5 p-3" id="about">
-      <div class="about">
-        <div class="about-1">
-          <img src="img/profilepix.jpg" alt="" class="img-thumbnail" />
-        </div>
-        <div class="about-2">
-          <h2>Goodness</h2>
-          <p class="h3">
-            Pharetra magna ac placerat vestibulum lectus mauris ultrices. Ut
-            pharetra sit amet aliquam id diam maecenas ultricies mi.
-            Sollicitudin ac orci phasellus egestas tellus rutrum. Venenatis cras
-            sed felis eget. Amet risus nullam eget felis eget nunc. Lacus
-            vestibulum sed arcu non odio euismod. Consectetur adipiscing  elitelit
-            duis tristique.
-          </p>
+        <a href="index.html" class="navbar-brand bg-primary px-4 mx-3 d-none d-lg-block">
+          <h1 class="display text-white m-0">House Of Glow</h1>
+        </a>
+        <div class="navbar-nav mr-auto py-0">
+          <a href="#team" class="nav-item nav-link">Team</a>
+          <a href="#faqs" class="nav-item nav-link">FAQs</a>
+          <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
+          <a href="#contact" class="nav-item nav-link">Contact</a>
         </div>
       </div>
-    </section>
-    <section class="container mt-5 p-4" id="gallery">
-      <div class="text">
-        <h1>GALLERY</h1>
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#" onclick="closeNav()">About</a>
+        <a href="#" onclick="closeNav()">Services</a>
+        <a href="#" onclick="closeNav()">Clients</a>
+        <a href="#project" onclick="closeNav()">Contact</a>
       </div>
-      <div class="row mb-3">
-        <div class="col img p-3">
-          <img src="img/gallaery2.jpg" alt="" width="200" height="200" />
-          <h2>Dinner Gown</h2>
-        </div>
-        <div class="col img p-3">
-          <img src="img/gallery3.jpg" alt="" width="200" height="200" />
-          <h2>Dinner Gown</h2>
-        </div>
-        <div class="col img p-3">
-          <img src="img/gallery4.jpg" alt="" width="200" height="200" />
-          <h2>Dinner Gown</h2>
-        </div>
-        <div class="col img p-3">
-          <img src="img/gallery5.jpg" alt="" width="200" height="200" />
-          <h2>Dinner Gown</h2>
-        </div>
-      </div>
-      <p>view more by clicking on the picture</p>
-    </section>
-    <section></section>
-    <section class="container mt-5 mb-5 p-3" id="contact">
-      <div class="container text-center">
-        <h6 class="display-4 has-line">CONTACT US</h6>
-        <p class="mb-5 pb-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </nav>
+  </section>
+  <!-- //header -->
+  <section class="mt-5 p-5" id="Home">
+    <div class="row p-4 justify-content-center align-items-center">
+      <div class="col-sm col-md col-lg">
+        <h1 class="heading">House of <span>Glow</span></h1>
+        <p class="title">
+          Style is a way to say who you are without having to speak. —Rachel
+          Zoe
         </p>
-        <form>
-          <div class="row mb-4">
-            <div class="col-md-6">
-              <div class="form-group pb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  required
-                  placeholder="Name"
-                />
-              </div>
-              <div class="form-group pb-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  required
-                  placeholder="Email"
-                />
-              </div>
-              <div class="form-group pb-3">
-                <input type="text" class="form-control" placeholder="Subject" />
-              </div>
+      </div>
+      <div class="col-sm col-md col-lg">
+        <img src="img/logo.jpg" alt="" class="img-fluid">
+      </div>
+    </div>
+  </section>
+  <section class="container mt-5 p-3" id="about">
+    <div class="text-white text-center mb-3">
+      <h1>ABOUT</h1>
+    </div>
+    <div class="about row">
+      <div class="about-1 col-sm col-md col-lg">
+        <img src="img/profilepix.jpg" alt="" class="img-thumbnail" />
+      </div>
+      <div class="about-2 col-sm col-md col-lg">
+        <h2>Goodness</h2>
+        <p class="h3">
+          Pharetra magna ac placerat vestibulum lectus mauris ultrices. Ut
+          pharetra sit amet aliquam id diam maecenas ultricies mi.
+          Sollicitudin ac orci phasellus egestas tellus rutrum. Venenatis cras
+          sed felis eget. Amet risus nullam eget felis eget nunc. Lacus
+          vestibulum sed arcu non odio euismod. Consectetur adipiscing elitelit
+          duis tristique.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="container mt-5 p-4" id="gallery">
+    <div class="text mb-5">
+      <h1>GALLERY</h1>
+    </div>
+    <div class="row mb-3">
+      <div class="col-sm col-md col-lg  p-3 img">
+        <img src="img.jpg" alt="" class="img-fluid" />
+        <h2>Co-operate</h2>
+      </div>
+      <div class="col-sm col-md col-lg  p-3 img">
+        <img src="img/_MG_0356.jpg" alt="" class="img-fluid" />
+        <h2>Dinner</h2>
+      </div>
+      <div class="col-sm col-md col-lg  p-3 img">
+        <img src="img/_MG_9910g.jpg" alt="" class="img-fluid" />
+        <h2>Weddings</h2>
+      </div>
+      <div class="col-sm col-md col-lg  p-3 img">
+        <img src="img/_MG_0215.jpg" alt="" class="img-fluid" />
+        <h2>Traditional</h2>
+      </div>
+    </div>
+    <p>view more by clicking on the picture</p>
+  </section>
+  <section></section>
+  <section class="container mt-5 p-3" id="contact">
+    <div class="container text-center">
+      <h1>CONTACT US</h1>
+      <p class="mb-5 pb-2">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <form>
+        <div class="row mb-4">
+          <div class="col-md-6">
+            <div class="form-group pb-3">
+              <input type="text" class="form-control" required placeholder="Name" />
             </div>
-            <div class="col-md-6">
-              <textarea
-                name=""
-                id=""
-                cols=""
-                rows="7"
-                class="form-control"
-                required
-                placeholder="Message"
-              ></textarea>
+            <div class="form-group pb-3">
+              <input type="email" class="form-control" required placeholder="Email" />
+            </div>
+            <div class="form-group pb-3">
+              <input type="text" class="form-control" placeholder="Subject" />
             </div>
           </div>
-          <input
-            type="submit"
-            class="btn btn-outline-light btn-block"
-            value="Send Message"
-          />
-        </form>
-      </div>
-    </section>
-    <footer class="footer py-2 text-light">
-      <div class="container text-center">
-        <div class="social pb-2">
-          <i class="fa fa-facebook" aria-hidden="true"></i>
-          <i class="fa fa-whatsapp" aria-hidden="true"></i>
-          <i class="fa fa-instagram" aria-hidden="true"></i>
-          <i class="fa fa-linkedin" aria-hidden="true"></i>
-          <i class="fa fa-pinterest" aria-hidden="true"></i>
+          <div class="col-md-6">
+            <textarea name="" id="" cols="" rows="7" class="form-control" required placeholder="Message"></textarea>
+          </div>
         </div>
-        <p class="mb-2 small">
-          Copyright
-          <script>
-            document.write(new Date().getFullYear());
-          </script>
-          &copy; TechBot
-        </p>
+        <input type="submit" class="btn btn-outline-light btn-block" value="Send Message" />
+      </form>
+    </div>
+  </section>
+  <footer class="footer bg-dark py-2 text-light">
+    <div class="container text-center">
+      <div class="social pb-2">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+        <i class="fa fa-pinterest" aria-hidden="true"></i>
       </div>
-    </footer>
-  </body>
+      <p class="mb-2 small">
+        Copyright
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        &copy; TechBot
+      </p>
+    </div>
+  </footer>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
 </html>

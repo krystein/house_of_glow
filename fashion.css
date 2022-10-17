@@ -1,51 +1,39 @@
+* {
+  scroll-behavior: smooth;
+  scroll-padding: 60px;
+}
 body {
-  min-height: 100%;
-  background: linear-gradient(
-      rgba(212, 37, 212, 0.5),
-      rgba(219, 128, 219, 0.5),
-      rgba(138, 61, 138, 0.5)
-    ),
-    url(./img/HOG.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
+  background-color: black;
 }
 h2,
 p {
   font-family: "PT Serif", serif;
 }
+h1 {
+  font-family: "Mr De Haviland", cursive;
+  font-weight: 800;
+}
 #Home {
   height: 100vh;
-  min-height: 100%;
-  background: linear-gradient(
-      rgba(212, 37, 212, 0.5),
-      rgba(219, 128, 219, 0.5),
-      rgba(138, 61, 138, 0.5)
-    ),
-    url(./img/logo.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-family: "DynaPuff", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Mr De Haviland", cursive;
+  background-color: rgba(240, 174, 86, 0.7);
   color: #fff;
 }
 .heading {
-  font-weight: 500;
-  font-size: clamp(3.5rem, 8vw, 7rem);
+  font-weight: 200;
+  font-size: clamp(5rem, 8vw, 7rem);
   text-align: center;
+  letter-spacing: 5px;
 }
 .title {
   font-weight: 400;
   font-size: 20px;
 }
 #about {
-  background: linear-gradient(
-      rgba(212, 37, 212, 0.9),
-      rgba(219, 128, 219, 0.9),
-      rgba(138, 61, 138, 0.9)
-    ),
-    url(./img/logo1.jpg);
+  background: rgba(240, 174, 86, 0.7);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -65,9 +53,9 @@ p {
   }
 }
 #gallery {
-  background-color: rgba(219, 128, 219, 0.5);
+  background-color: rgba(240, 174, 86, 0.7);
   color: #fff;
-  font-family: "DynaPuff", cursive;
+  font-family: "Mr De Haviland", cursive;
 }
 .col {
   display: grid;
@@ -75,7 +63,7 @@ p {
 }
 .img:hover {
   border-radius: 0px 20px;
-  box-shadow: 0rem 0rem 3.38rem rgba(94, 4, 94, 0.5);
+  box-shadow: 0rem 0rem 3.38rem rgba(240, 174, 86, 1);
   cursor: pointer;
   transform: scale(1.05);
 }
@@ -91,20 +79,13 @@ p {
   text-align: center;
 }
 #contact {
-  background: linear-gradient(
-      rgba(212, 37, 212, 0.9),
-      rgba(219, 128, 219, 0.9),
-      rgba(138, 61, 138, 0.9)
-    ),
-    url(./img/logo1.jpg);
+  background: rgba(240, 174, 86, 0.7);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   color: #fff;
-  font-family: "DynaPuff", cursive;
-}
-.footer {
-  background-color: rgba(94, 4, 94, 0.5);
+  font-family: "cursive";
+  font-weight: 200;
 }
 .social {
   color: white;
@@ -113,7 +94,74 @@ p {
 }
 .fa:hover {
   border-radius: 0px 20px;
-  box-shadow: 0rem 0rem 3.38rem rgba(94, 4, 94, 0.5);
+  box-shadow: 0rem 0rem 3.38rem rgba(240, 174, 86, 1);
   cursor: pointer;
   transform: scale(1.05);
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(240, 174, 86, 1);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+#before::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 3px;
+  background-color: red;
 }
