@@ -2,12 +2,13 @@
   scroll-behavior: smooth;
   scroll-padding: 60px;
 }
-body {
-  background-color: black;
-}
 h2,
-p {
+p,
+.h2 {
   font-family: "PT Serif", serif;
+}
+.small {
+  font-size: 10px !important;
 }
 h1 {
   font-family: "Mr De Haviland", cursive;
@@ -90,7 +91,7 @@ h1 {
 .social {
   color: white;
   letter-spacing: 10px;
-  font-size: 22px;
+  font-size: 15px;
 }
 .fa:hover {
   border-radius: 0px 20px;
