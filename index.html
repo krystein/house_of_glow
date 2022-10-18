@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/jewelry.png">
   <link rel="stylesheet" href="./fashion.css" />
   <link rel="stylesheet" href="./css/bootstrap-grid.css" />
   <link rel="stylesheet" href="./css/bootstrap.css" />
   <link rel="stylesheet" href="./css/bootstrap-reboot.css" />
   <link rel="stylesheet" href="./css/bootstrap-utilities.css" />
-  <title>fashion</title>
+  <title>HOGlow</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -34,30 +35,26 @@
         <div class="navbar-nav ml-auto py-0">
           <a href="#Home" class="nav-item nav-link active">Home</a>
           <a href="#about" class="nav-item nav-link">About</a>
-          <a href="#service" class="nav-item nav-link">Service</a>
-          <a href="#project" class="nav-item nav-link">Project</a>
         </div>
-        <a href="index.html" class="navbar-brand bg-primary px-4 mx-3 d-none d-lg-block">
+        <a href="index.html" class="navbar-brand px-4 mx-3 d-none d-lg-block" style="background-color: purple;">
           <h1 class="display text-white m-0">House Of Glow</h1>
         </a>
         <div class="navbar-nav mr-auto py-0">
-          <a href="#team" class="nav-item nav-link">Team</a>
-          <a href="#faqs" class="nav-item nav-link">FAQs</a>
-          <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
+          <a href="#gallery" class="nav-item nav-link">Gallery</a>
           <a href="#contact" class="nav-item nav-link">Contact</a>
         </div>
       </div>
       <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="#" onclick="closeNav()">About</a>
-        <a href="#" onclick="closeNav()">Services</a>
-        <a href="#" onclick="closeNav()">Clients</a>
-        <a href="#project" onclick="closeNav()">Contact</a>
+        <a href="#Home" onclick="closeNav()">Home</a>
+        <a href="#about" onclick="closeNav()">About</a>
+        <a href="#gallery" onclick="closeNav()">Gallery</a>
+        <a href="#contact" onclick="closeNav()">Contact</a>
       </div>
     </nav>
   </section>
   <!-- //header -->
-  <section class="mt-5 p-5" id="Home">
+  <section class="p-5" id="Home">
     <div class="row p-4 justify-content-center align-items-center">
       <div class="col-sm col-md col-lg">
         <h1 class="heading">House of <span>Glow</span></h1>
@@ -71,15 +68,15 @@
       </div>
     </div>
   </section>
-  <section class="container mt-5 p-3" id="about">
-    <div class="text-white text-center mb-3">
+  <section class="container mt-5 p-4" id="about">
+    <div class="text-white text-center mb-5">
       <h1>ABOUT</h1>
     </div>
-    <div class="about row">
-      <div class="about-1 col-sm col-md col-lg">
-        <img src="img/profilepix.jpg" alt="" class="img-thumbnail" />
+    <div class="about row ">
+      <div class="col-sm col-md col-lg-5">
+        <img src="img/profilepix.jpg" alt="" class="img-fluid" />
       </div>
-      <div class="about-2 col-sm col-md col-lg">
+      <div class="col-sm col-md col-lg">
         <h2>Goodness</h2>
         <p class="h3">
           Pharetra magna ac placerat vestibulum lectus mauris ultrices. Ut
@@ -127,7 +124,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </p>
       <form>
-        <div class="row mb-3">
+        <div class="row mb-3 align-items-center">
           <div class="col-md-6">
             <div class="form-group pb-3">
               <input type="text" class="form-control" required placeholder="Name" />

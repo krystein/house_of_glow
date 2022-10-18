@@ -64,7 +64,6 @@ h1 {
 }
 .img:hover {
   border-radius: 0px 20px;
-  box-shadow: 0rem 0rem 3.38rem rgba(240, 174, 86, 1);
   cursor: pointer;
   transform: scale(1.05);
 }
@@ -104,9 +103,9 @@ h1 {
   width: 0;
   position: fixed;
   z-index: 1;
-  top: 0;
+  bottom: 0;
   left: 0;
-  background-color: rgba(240, 174, 86, 1);
+  background-color: rgb(49, 3, 49);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
