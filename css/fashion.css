@@ -4,15 +4,23 @@
 }
 h2,
 p,
-.h2 {
+.h2,
+.h4 {
   font-family: "PT Serif", serif;
 }
 .small {
   font-size: 10px !important;
 }
+.h1,
 h1 {
   font-family: "Mr De Haviland", cursive;
   font-weight: 800;
+}
+.h4 {
+  text-align: justify;
+}
+hr {
+  margin: 0;
 }
 #Home {
   height: 100vh;
@@ -92,11 +100,14 @@ h1 {
 .social {
   color: white;
   letter-spacing: 10px;
-  font-size: 15px;
+  font-size: 20px;
+}
+.fa {
+  color: #fff;
 }
 .fa:hover {
   border-radius: 0px 20px;
-  box-shadow: 0rem 0rem 3.38rem rgba(240, 174, 86, 1);
+  color: rgba(240, 174, 86, 1);
   cursor: pointer;
   transform: scale(1.05);
 }
