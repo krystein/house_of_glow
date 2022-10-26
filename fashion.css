@@ -53,7 +53,9 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
-#gallery {
+#gallery,
+#Ready,
+#Style {
   background-color: rgba(240, 174, 86, 0.7);
   color: #fff;
   font-family: "Mr De Haviland", cursive;
